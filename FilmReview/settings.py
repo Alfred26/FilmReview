@@ -107,6 +107,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'FilmReview.urls'
 
 TEMPLATE_DIRS = (
+    '/afs/nada.kth.se/home/k/u1dn8ddk/dd2390/gitProject/FilmReview/templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
