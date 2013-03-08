@@ -8,13 +8,13 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-
+#'django.db.backends.',
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', 'mysql'  # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'mysql-vt2013.csc.kth.se',                      # Or path to database file if using sqlite3.
-        'USER': 'krappmanadmin',                      # Not used with sqlite3.
-        'PASSWORD': 'pBzr17veud',                  # Not used with sqlite3.
+        'ENGINE': 'sqlite3',  # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': '/afs/nada.kth.se/home/k/u1dn8ddk/dd2390/gitProject/FilmReview/filmDB.db',                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -119,6 +119,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'FilmReview.accounts',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
